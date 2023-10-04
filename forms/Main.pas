@@ -8,9 +8,13 @@ uses
 
 type
   TForm6 = class(TForm)
-    Edit1: TEdit;
     Button1: TButton;
-    ComboBox1: TComboBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Button2: TButton;
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,6 +26,15 @@ var
 
 implementation
 
+uses
+  Unit1;
+
 {$R *.dfm}
+
+procedure TForm6.Button2Click(Sender: TObject);
+begin
+  form1.ShowModal;
+  form6.Close;
+end;
 
 end.
