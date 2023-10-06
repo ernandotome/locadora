@@ -18,7 +18,6 @@ object DataModule1: TDataModule1
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
     VendorLib = 'C:\Users\ernan\Downloads\libmysql.dll'
-    OnDriverCreated = FDPhysMySQLDriverLink1DriverCreated
     Left = 440
     Top = 112
   end

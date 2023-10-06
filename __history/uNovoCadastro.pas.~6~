@@ -1,12 +1,12 @@
-unit uNovoCadastro;
+﻿unit uNovoCadastro;
 
 interface
 
 uses
-  iNovoUsuario;
+  InovoUsuario;
 
 type
-  Tusuario = class(TInterfacedObject, iUsuario)
+  Tusuario = class(TInterfacedObject, Iusuario)
     private
       Fnome : string;
       Fsobrenome: string;
@@ -17,13 +17,13 @@ type
       Fconfirmacao : string;
 
     public
-    function nome(avalue : string) : iUsuario; overload;
-    function sobrenome(avalue : string) : iUsuario; overload;
-    function usuario(avalue : string) : iUsuario; overload;
-    function telefone(avalue : string) : iUsuario; overload;
-    function email(avalue : string) : iUsuario; overload;
-    function senha(avalue : string) : iUsuario; overload;
-    function confirmacao(avalue : string) : iUsuario; overload;
+    function nome(avalue : string) : Iusuario; overload;
+    function sobrenome(avalue : string) : Iusuario; overload;
+    function usuario(avalue : string) : Iusuario; overload;
+    function telefone(avalue : string) : Iusuario; overload;
+    function email(avalue : string) : Iusuario; overload;
+    function senha(avalue : string) : Iusuario; overload;
+    function confirmacao(avalue : string) : Iusuario; overload;
 
 
     function nome : string; overload;
@@ -34,7 +34,7 @@ type
     function senha : string; overload;
     function confirmacao : string; overload;
 
-    class function new: iUsuario;
+    class function new: Iusuario;
 
     constructor create;
     destructor destroy; override;
@@ -45,14 +45,14 @@ implementation
 
 { Tusuario }
 
-function Tusuario.nome(avalue: string): iUsuario;
+function Tusuario.nome(avalue: string): Iusuario;
 begin
   result := self;
 
   self.Fnome := avalue;
 end;
 
-function Tusuario.confirmacao(avalue: string): iUsuario;
+function Tusuario.confirmacao(avalue: string): Iusuario;
 begin
   result := self;
 
@@ -82,14 +82,14 @@ begin
 
 end;
 
-function Tusuario.email(avalue: string): iUsuario;
+function Tusuario.email(avalue: string): Iusuario;
 begin
   result := self;
 
   self.Femail := avalue;
 end;
 
-class function Tusuario.new: iUsuario;
+class function Tusuario.new: Iusuario;
 begin
   result := self.create;
 
@@ -101,7 +101,7 @@ begin
 
 end;
 
-function Tusuario.sobrenome(avalue: string): iUsuario;
+function Tusuario.sobrenome(avalue: string): Iusuario;
 begin
   result := self;
 
@@ -114,7 +114,7 @@ begin
 
 end;
 
-function Tusuario.senha(avalue: string): iUsuario;
+function Tusuario.senha(avalue: string): Iusuario;
 begin
   result := self;
 
@@ -133,14 +133,14 @@ begin
 
 end;
 
-function Tusuario.telefone(avalue: string): iUsuario;
+function Tusuario.telefone(avalue: string): Iusuario;
 begin
   result := self;
 
   self.Ftelefone := avalue;
 end;
 
-function Tusuario.usuario(avalue: string): iUsuario;
+function Tusuario.usuario(avalue: string): Iusuario;
 begin
   result := self;
 

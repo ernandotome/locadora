@@ -1,4 +1,4 @@
-unit uCadastro;
+﻿unit uCadastro;
 
 interface
 
@@ -43,7 +43,7 @@ uses
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  usuario : iUsuario;
+  usuario : iusuario;
 
 begin
   usuario := Tusuario.new

@@ -1,4 +1,4 @@
-unit Unit1;
+unit uDataModule1;
 
 interface
 
@@ -15,7 +15,6 @@ type
     FDConnection1: TFDConnection;
     FDQuery1: TFDQuery;
     FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink;
-    procedure FDPhysMySQLDriverLink1DriverCreated(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,10 +29,5 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
-
-procedure TDataModule1.FDPhysMySQLDriverLink1DriverCreated(Sender: TObject);
-begin
-
-end;
 
 end.

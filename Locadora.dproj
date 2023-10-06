@@ -108,6 +108,11 @@
         </DCCReference>
         <DCCReference Include="iNovoUsuario.pas"/>
         <DCCReference Include="uNovoCadastro.pas"/>
+        <DCCReference Include="uDataModule1.pas">
+            <Form>DataModule1</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
