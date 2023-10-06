@@ -1,0 +1,55 @@
+unit uNovoCadastro;
+
+interface
+
+uses
+  InovoUsuario;
+
+type
+  Tusuario = class(TInterfacedObject, Iusuario)
+    private
+      Fnome : string;
+      Fsobrenome: string;
+
+    public
+      function nome(avalue : string) : Iusuario; overload;
+      function sobrenome (avalue : string) : Iusuario; overload;
+
+      function nome : string; overload;
+      function sobrenome : string; overload;
+
+  end;
+
+implementation
+
+{ Tusuario }
+
+function Tusuario.nome(avalue: string): Iusuario;
+begin
+  result := self;
+
+  self.Fnome := avalue;
+
+end;
+
+function Tusuario.nome: string;
+begin
+  result := self.Fnome;
+
+end;
+
+function Tusuario.sobrenome(avalue: string): Iusuario;
+begin
+  result := self;
+
+  self.Fsobrenome := avalue;
+
+end;
+
+function Tusuario.sobrenome: string;
+begin
+  result := self.Fsobrenome;
+
+end;
+
+end.

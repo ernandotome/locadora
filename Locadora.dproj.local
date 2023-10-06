@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/05 09:17:48.000.704,=C:\Users\ernan\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2023/10/05 09:18:24.000.342,C:\Users\ernan\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uProjeto.pas</Transaction>
+    <Transaction>2023/10/05 09:18:24.000.342,C:\Users\ernan\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uProjeto.dfm</Transaction>
+    <Transaction>2023/10/05 09:18:35.000.747,C:\Users\ernan\OneDrive\Documentos\Embarcadero\Studio\Projects\Project8.dproj=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Locadora.dproj</Transaction>
+    <Transaction>2023/10/05 09:25:20.000.860,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 10:03:30.000.476,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.pas</Transaction>
+    <Transaction>2023/10/05 10:03:30.000.476,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.dfm</Transaction>
+    <Transaction>2023/10/05 10:31:14.000.347,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 10:32:48.000.792,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Iusuario.pas</Transaction>
+    <Transaction>2023/10/05 10:37:52.000.230,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Iusuario.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\InovoUsuario.pas</Transaction>
+    <Transaction>2023/10/05 10:57:22.000.354,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
+    <Transaction>2023/10/05 10:57:49.000.821,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uNovoCadastro.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="InovoUsuario.pas"/>
+    <File Path="uCadastro.pas"/>
+    <File Path="uCadastro.dfm"/>
+    <File Path="uNovoCadastro.pas"/>
+    <File Path="uProjeto.pas"/>
+    <File Path="uProjeto.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

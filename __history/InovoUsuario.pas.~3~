@@ -1,0 +1,18 @@
+unit InovoUsuario;
+
+interface
+
+type
+  Iusuario = Interface
+    function Nome : string;
+    function Sobrenome : string;
+
+  End;
+
+  Tusuario = class(TInterfacedObject, Iusuario)
+
+  end;
+
+implementation
+
+end.
