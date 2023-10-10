@@ -21,6 +21,8 @@ type
     function senha : string; overload;
     function confirmacao : string; overload;
 
+    function cadastro : Boolean;
+
   End;
 
 implementation
