@@ -51,6 +51,7 @@ object Form6: TForm6
     Height = 25
     Caption = 'Entrar'
     TabOrder = 2
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 243

@@ -68,6 +68,7 @@ object Form1: TForm1
     Width = 169
     Height = 23
     TabOrder = 0
+    Text = 'Ernando'
   end
   object Edit2: TEdit
     Left = 232
@@ -75,6 +76,7 @@ object Form1: TForm1
     Width = 169
     Height = 23
     TabOrder = 1
+    Text = 'Tom'#233
   end
   object Edit4: TEdit
     Left = 40
@@ -83,6 +85,7 @@ object Form1: TForm1
     Height = 23
     ImeName = 'Edit5'
     TabOrder = 4
+    Text = 'ernandotome'
   end
   object Edit3: TEdit
     Left = 40
@@ -91,16 +94,17 @@ object Form1: TForm1
     Height = 23
     ImeName = 'Edit3'
     TabOrder = 2
+    Text = 'ernando@hotmail.com'
   end
   object MaskEdit1: TMaskEdit
     Left = 42
     Top = 200
-    Width = 206
+    Width = 204
     Height = 23
     EditMask = '!\(99\)00000-0000;1;_'
     MaxLength = 14
     TabOrder = 3
-    Text = '(  )     -    '
+    Text = '(88)98224-5761'
   end
   object Edit5: TEdit
     Left = 182
@@ -111,6 +115,7 @@ object Form1: TForm1
     MaxLength = 8
     PasswordChar = '*'
     TabOrder = 5
+    Text = '12345678'
   end
   object Edit6: TEdit
     Left = 182
@@ -119,7 +124,8 @@ object Form1: TForm1
     Height = 23
     MaxLength = 8
     PasswordChar = '*'
-    TabOrder = 6
+    TabOrder = 7
+    Text = '12345678'
   end
   object Button1: TButton
     Left = 326
@@ -127,7 +133,25 @@ object Form1: TForm1
     Width = 75
     Height = 25
     Caption = 'Cadastrar '
-    TabOrder = 7
+    TabOrder = 8
     OnClick = Button1Click
+  end
+  object RadioButton1: TRadioButton
+    Left = 42
+    Top = 341
+    Width = 113
+    Height = 17
+    Caption = 'Operador'
+    TabOrder = 6
+  end
+  object RadioButton2: TRadioButton
+    Left = 42
+    Top = 364
+    Width = 113
+    Height = 17
+    Caption = 'Atendente'
+    Checked = True
+    TabOrder = 9
+    TabStop = True
   end
 end

@@ -15,6 +15,7 @@ type
       Femail : string;
       Fsenha : string;
       Fconfirmacao : string;
+      Ffuncao : boolean;
 
     public
       class function new: iUsuario;
@@ -28,6 +29,7 @@ type
       function email : string; overload;
       function senha : string; overload;
       function confirmacao : string; overload;
+      function funcao : boolean; overload;
 
       function nome(avalue : string) : iUsuario; overload;
       function sobrenome(avalue : string) : iUsuario; overload;
@@ -36,6 +38,7 @@ type
       function email(avalue : string) : iUsuario; overload;
       function senha(avalue : string) : iUsuario; overload;
       function confirmacao(avalue : string) : iUsuario; overload;
+      function funcao(avalue : boolean) : iUsuario; overload;
 
       function cadastro : Boolean;
 
@@ -72,6 +75,7 @@ begin
     qr.FieldByName('Email').AsString := Femail;
     qr.FieldByName('Senha').AsString := Fsenha;
     qr.FieldByName('Confirmacao').AsString := Fconfirmacao;
+    qr.FieldByName('Funcao').AsBoolean := Ffuncao;
     try
       qr.post;
       result := true;
@@ -123,6 +127,19 @@ begin
   result := self;
 
   self.Femail := avalue;
+end;
+
+function Tusuario.funcao(avalue: boolean): iUsuario;
+begin
+  result := self;
+
+  self.Ffuncao := avalue;
+end;
+
+function Tusuario.funcao: boolean;
+begin
+  result := self.Ffuncao;
+
 end;
 
 class function Tusuario.new: iUsuario;

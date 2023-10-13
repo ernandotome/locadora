@@ -23,12 +23,15 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Button1: TButton;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button1Click(Sender: TObject);
   private
-    { Private declarations }
+
   public
-    { Public declarations }
+  function ValidarEMail(aStr: string): Boolean;
+
   end;
 
 var
@@ -46,7 +49,8 @@ var
   usuario : iUsuario;
 
 begin
-  if  (Edit1.Text <> '') and
+  if
+      (Edit1.Text <> '') and
       (Edit2.Text <> '') and
       (Edit3.Text <> '') and
       (MaskEdit1.Text <> '(  )     -    ') and
@@ -59,28 +63,43 @@ begin
       begin
          if Edit5.Text = Edit6.Text then
           begin
-            usuario := Tusuario.new
-              .nome(Edit1.Text)
-              .sobrenome(Edit2.Text)
-              .usuario(Edit3.Text)
-              .telefone(MaskEdit1.Text)
-              .email(Edit4.Text)
-              .senha(Edit5.Text)
-              .confirmacao(Edit6.Text);
-            ShowMessage('Seu cadastro foi realizado com sucesso.');
+            if ValidarEMail(Edit3.Text) = true then
+              begin
+                if RadioButton1.Checked = false or
+                   RadioButton1.Checked = true then
+                  begin
+                    usuario := Tusuario.new
+                      .nome(Edit1.Text)
+                      .sobrenome(Edit2.Text)
+                      .usuario(Edit3.Text)
+                      .telefone(MaskEdit1.Text)
+                      .email(Edit4.Text)
+                      .senha(Edit5.Text)
+                      .confirmacao(Edit6.Text)
+                      .funcao(RadioButton1.Checked);
+                    ShowMessage('Seu cadastro foi realizado com sucesso.');
 
-            Edit1.Clear;
-            Edit2.Clear;
-            Edit3.Clear;
-            MaskEdit1.Clear;
-            Edit4.Clear;
-            Edit5.Clear;
-            Edit6.Clear;
 
-            if usuario.cadastro then
+                    Edit1.Clear;
+                    Edit2.Clear;
+                    Edit3.Clear;
+                    MaskEdit1.Clear;
+                    Edit4.Clear;
+                    Edit5.Clear;
+                    Edit6.Clear;
+                    RadioButton1.Checked := false;
 
-            form1.Close;
+                    if usuario.cadastro then
 
+                    form1.Close;
+                  end
+                else
+                  
+              end
+            else
+              begin
+                ShowMessage('Seu email não é válido, tente reescrevelo.')
+              end;
           end
          else
           begin
@@ -103,5 +122,18 @@ procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
     form6.Visible := true;
 
   end;
+
+function TForm1.ValidarEMail(aStr: string): Boolean;
+begin
+
+    aStr := Trim(UpperCase(aStr));
+   if Pos('@', aStr) > 1 then
+    begin
+     Delete(aStr, 1, pos('@', aStr));
+     Result := (Length(aStr) > 0) and (Pos('.', aStr) > 2);
+    end
+   else
+    Result := False;
+end;
 
 end.
