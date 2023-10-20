@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 0
-  Top = 0
+  Left = 633
+  Top = 332
   Caption = 'Novo Atendente'
   ClientHeight = 419
   ClientWidth = 444
@@ -10,7 +10,7 @@ object Form4: TForm4
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  Position = poDesktopCenter
+  Position = poDesigned
   TextHeight = 15
   object Label1: TLabel
     Left = 40
@@ -76,7 +76,6 @@ object Form4: TForm4
     Width = 165
     Height = 23
     TabOrder = 1
-    Text = 'Ernando'
   end
   object Edit2: TEdit
     Left = 232
@@ -84,7 +83,6 @@ object Form4: TForm4
     Width = 165
     Height = 23
     TabOrder = 2
-    Text = 'Tom'#233
   end
   object Edit4: TEdit
     Left = 40
@@ -93,7 +91,6 @@ object Form4: TForm4
     Height = 23
     ImeName = 'Edit5'
     TabOrder = 3
-    Text = 'ernandotome'
   end
   object Edit3: TEdit
     Left = 40
@@ -102,17 +99,16 @@ object Form4: TForm4
     Height = 23
     ImeName = 'Edit3'
     TabOrder = 4
-    Text = 'ernando@hotmail.com'
   end
   object MaskEdit1: TMaskEdit
     Left = 42
     Top = 200
-    Width = 204
+    Width = 200
     Height = 23
-    EditMask = '!\(99\)00000-0000;1;_'
+    EditMask = '!\(99\)00000-0000;0;_'
     MaxLength = 14
     TabOrder = 5
-    Text = '(88)98224-5761'
+    Text = ''
   end
   object Edit5: TEdit
     Left = 182
@@ -123,7 +119,6 @@ object Form4: TForm4
     MaxLength = 8
     PasswordChar = '*'
     TabOrder = 6
-    Text = '12345678'
   end
   object Edit6: TEdit
     Left = 182
@@ -133,7 +128,6 @@ object Form4: TForm4
     MaxLength = 8
     PasswordChar = '*'
     TabOrder = 7
-    Text = '12345678'
   end
   object Button2: TButton
     Left = 281

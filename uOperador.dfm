@@ -27,8 +27,9 @@ object Form3: TForm3
     Top = 176
     Width = 105
     Height = 57
-    Caption = 'Cadastro'
+    Caption = 'Cadastrar M'#237'dia'
     TabOrder = 0
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 248

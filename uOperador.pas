@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls,
   System.Actions, Vcl.ActnList, Vcl.CategoryButtons, Vcl.CheckLst,
   System.Win.TaskbarCore, Vcl.Taskbar, Vcl.Menus, Vcl.ExtCtrls, Vcl.Mask, uCadastro,
-  uCadastroAtendente;
+  uCadastroAtendente, Unit5;
 
 type
   TForm3 = class(TForm)
@@ -30,6 +30,7 @@ type
     Button2: TButton;
     Button3: TButton;
     procedure CD1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,6 +43,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+  Form5.show
+end;
 
 procedure TForm3.CD1Click(Sender: TObject);
 begin

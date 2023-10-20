@@ -33,6 +33,7 @@ object Form6: TForm6
     Top = 72
     Width = 121
     Height = 23
+    Hint = 'oi'
     TabOrder = 0
     Text = 'root'
   end

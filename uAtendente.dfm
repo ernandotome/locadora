@@ -10,19 +10,20 @@ object Form2: TForm2
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  PopupMenu = PopupMenu1
   Position = poDesktopCenter
   TextHeight = 15
   object Label1: TLabel
     Left = 248
-    Top = 216
+    Top = 40
     Width = 121
     Height = 15
     Alignment = taCenter
     Caption = 'Bem-Vindo, Atendente'
   end
   object PopupMenu1: TPopupMenu
-    Left = 80
-    Top = 88
+    Left = 568
+    Top = 384
     object Adicionar1: TMenuItem
       Caption = 'Adicionar'
     end

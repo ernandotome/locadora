@@ -40,38 +40,37 @@ var
       qr.Connection := DataModule1.FDConnection1;
 
       if qr.Active  then
-       qr.Close;
+         qr.Close;
 
-      qr.SQL.Text :=
-        'SELECT * FROM usuario As u WHERE u.Usuario = "' + Edit1.Text +
-        '" AND u.Senha = "' + Edit2.Text + '"';
+         qr.SQL.Text :=
+          'SELECT * FROM usuario As u WHERE u.Usuario = "' + Edit1.Text +
+          '" AND u.Senha = "' + Edit2.Text + '"';
 
-      qr.Active:= true;
+         qr.Active:= true;
 
-      var
-        funcao := qr.FieldByName('funcao').AsString;
+         var
+          funcao := qr.FieldByName('funcao').AsString;
 
-        begin
-          if qr.RecordCount <= 0 then
-           begin
-             ShowMessage('Usuario ou senha não exitem.');
-             Edit1.SetFocus;
-           end;
-          if funcao = '0' then
-           begin
-            Form6.Visible := false;
-            Form3.ShowModal;
-            Form6.Close;
-           end
-          else if funcao = '1' then
-            begin
+          begin
+            if qr.RecordCount <= 0 then
+             begin
+               ShowMessage('Usuario ou senha não exitem.');
+               Edit1.SetFocus;
+             end;
+            if funcao = '0' then
+             begin
               Form6.Visible := false;
-              Form2.ShowModal;
+              Form3.ShowModal;
               Form6.Close;
-            end;
+             end
+            else if funcao = '1' then
+              begin
+                Form6.Visible := false;
+                Form2.ShowModal;
+                Form6.Close;
+              end;
 
-        end;
-
+          end;
     finally
       FreeAndNil(qr);
 
@@ -83,7 +82,6 @@ procedure TForm6.Button2Click(Sender: TObject);
   begin
     form1.Show;
     Form6.Visible := false;
-
   end;
 
 procedure TForm6.Button3Click(Sender: TObject);
@@ -96,7 +94,5 @@ procedure TForm6.Button3Click(Sender: TObject);
       begin
         Edit2.PasswordChar := '*';
       end;
-
   end;
-
 end.
