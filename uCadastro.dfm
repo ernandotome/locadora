@@ -124,7 +124,7 @@ object Form1: TForm1
     Height = 23
     MaxLength = 8
     PasswordChar = '*'
-    TabOrder = 7
+    TabOrder = 6
     Text = '12345678'
   end
   object Button1: TButton
@@ -133,25 +133,35 @@ object Form1: TForm1
     Width = 75
     Height = 25
     Caption = 'Cadastrar '
-    TabOrder = 8
+    TabOrder = 7
     OnClick = Button1Click
   end
-  object RadioButton1: TRadioButton
-    Left = 42
-    Top = 341
-    Width = 113
-    Height = 17
-    Caption = 'Operador'
-    TabOrder = 6
+  object Button2: TButton
+    Left = 281
+    Top = 298
+    Width = 21
+    Height = 21
+    Caption = #55357#56385#65039#8205#55357#56808#65039
+    TabOrder = 8
+    OnClick = Button2Click
   end
-  object RadioButton2: TRadioButton
-    Left = 42
-    Top = 364
-    Width = 113
-    Height = 17
-    Caption = 'Atendente'
-    Checked = True
+  object Button3: TButton
+    Left = 281
+    Top = 348
+    Width = 21
+    Height = 21
+    Caption = #55357#56385#65039#8205#55357#56808#65039
     TabOrder = 9
-    TabStop = True
+    OnClick = Button3Click
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 38
+    Top = 325
+    Width = 123
+    Height = 68
+    Caption = 'Fun'#231#227'o'
+    Items.Strings = (
+      'Operador')
+    TabOrder = 10
   end
 end

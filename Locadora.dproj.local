@@ -6,8 +6,8 @@
     <Transaction>2023/10/05 09:18:24.000.342,C:\Users\ernan\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uProjeto.pas</Transaction>
     <Transaction>2023/10/05 09:18:35.000.747,C:\Users\ernan\OneDrive\Documentos\Embarcadero\Studio\Projects\Project8.dproj=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Locadora.dproj</Transaction>
     <Transaction>2023/10/05 09:25:20.000.860,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
-    <Transaction>2023/10/05 10:03:30.000.476,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.pas</Transaction>
     <Transaction>2023/10/05 10:03:30.000.476,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.dfm</Transaction>
+    <Transaction>2023/10/05 10:03:30.000.476,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.pas</Transaction>
     <Transaction>2023/10/05 10:31:14.000.347,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
     <Transaction>2023/10/05 10:32:48.000.792,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Iusuario.pas</Transaction>
     <Transaction>2023/10/05 10:37:52.000.230,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Iusuario.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\InovoUsuario.pas</Transaction>
@@ -19,6 +19,32 @@
     <Transaction>2023/10/06 19:47:29.000.973,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uDataModule1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
     <Transaction>2023/10/10 11:55:52.000.457,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
     <Transaction>2023/10/10 19:46:44.000.748,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\teste.pas</Transaction>
+    <Transaction>2023/10/17 09:05:36.000.470,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit2.pas</Transaction>
+    <Transaction>2023/10/17 09:06:21.000.749,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uOperador.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit2.pas</Transaction>
+    <Transaction>2023/10/17 09:06:21.000.749,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uOperador.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit2.dfm</Transaction>
+    <Transaction>2023/10/17 09:09:21.000.298,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit3.pas</Transaction>
+    <Transaction>2023/10/17 09:09:33.000.235,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit3.pas</Transaction>
+    <Transaction>2023/10/17 09:09:33.000.235,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit3.dfm</Transaction>
+    <Transaction>2023/10/17 09:16:48.000.042,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente1.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uOperador.dfm</Transaction>
+    <Transaction>2023/10/17 09:16:48.000.042,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente1.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uOperador.pas</Transaction>
+    <Transaction>2023/10/17 09:17:05.000.182,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uOperador.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente.dfm</Transaction>
+    <Transaction>2023/10/17 09:17:05.000.182,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uOperador.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente.pas</Transaction>
+    <Transaction>2023/10/17 09:17:14.000.283,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente1.dfm</Transaction>
+    <Transaction>2023/10/17 09:17:14.000.283,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uAtendente1.pas</Transaction>
+    <Transaction>2023/10/17 21:11:04.000.231,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit4.pas</Transaction>
+    <Transaction>2023/10/17 21:29:22.000.958,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastroAtendente.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit4.pas</Transaction>
+    <Transaction>2023/10/17 21:29:22.000.958,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastroAtendente.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit4.dfm</Transaction>
+    <Transaction>2023/10/17 21:29:39.000.432,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastroOperador.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.dfm</Transaction>
+    <Transaction>2023/10/17 21:29:39.000.432,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastroOperador.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.pas</Transaction>
+    <Transaction>2023/10/17 21:31:52.000.197,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastroOperador.dfm</Transaction>
+    <Transaction>2023/10/17 21:31:52.000.197,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastro.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uCadastroOperador.pas</Transaction>
+    <Transaction>2023/10/17 22:46:54.000.998,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit1.pas</Transaction>
+    <Transaction>2023/10/17 22:47:22.000.459,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit5.pas</Transaction>
+    <Transaction>2023/10/17 22:56:37.000.429,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uPesquisa.pas=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit5.pas</Transaction>
+    <Transaction>2023/10/17 22:56:37.000.429,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uPesquisa.dfm=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit5.dfm</Transaction>
+    <Transaction>2023/10/17 23:31:48.000.368,C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\uPesquisa.pas=</Transaction>
+    <Transaction>2023/10/17 23:32:01.000.459,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit5.pas</Transaction>
+    <Transaction>2023/10/17 23:44:23.000.420,=C:\Users\ernan\OneDrive\Documentos\GitHub\locadora\Unit5.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="iNovoUsuario.pas"/>
@@ -29,5 +55,11 @@
     <File Path="uProjeto.dfm"/>
     <File Path="uDataModule1.pas"/>
     <File Path="uDataModule1.dfm"/>
+    <File Path="uAtendente.pas"/>
+    <File Path="uAtendente.dfm"/>
+    <File Path="uOperador.pas"/>
+    <File Path="uOperador.dfm"/>
+    <File Path="uCadastroAtendente.pas"/>
+    <File Path="uCadastroAtendente.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>

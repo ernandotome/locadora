@@ -11,7 +11,7 @@ type
     function email(avalue : string) : iUsuario; overload;
     function senha(avalue : string) : iUsuario; overload;
     function confirmacao(avalue : string) : iUsuario; overload;
-    function funcao(avalue : boolean) : iUsuario; overload;
+    function funcao(avalue : integer) : iUsuario; overload;
 
 
     function nome : string; overload;
@@ -21,7 +21,7 @@ type
     function email : string; overload;
     function senha : string; overload;
     function confirmacao : string; overload;
-    function funcao : boolean; overload;
+    function funcao : integer; overload;
 
     function cadastro : Boolean;
 

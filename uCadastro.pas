@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls;
 
 type
   TForm1 = class(TForm)
@@ -23,10 +23,13 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Button1: TButton;
-    RadioButton1: TRadioButton;
-    RadioButton2: TRadioButton;
+    Button2: TButton;
+    Button3: TButton;
+    RadioGroup1: TRadioGroup;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
 
   public
@@ -50,78 +53,96 @@ var
 
 begin
   if
-      (Edit1.Text <> '') and
-      (Edit2.Text <> '') and
-      (Edit3.Text <> '') and
-      (MaskEdit1.Text <> '(  )     -    ') and
-      (Edit4.Text <> '') and
-      (Edit5.Text <> '') and
-      (Edit6.Text <> '') then
+    (Edit1.Text <> '') and
+    (Edit2.Text <> '') and
+    (Edit3.Text <> '') and
+    (MaskEdit1.Text <> '(  )     -    ') and
+    (Edit4.Text <> '') and
+    (Edit5.Text <> '') and
+    (Edit6.Text <> '') then
 
   begin
     if Length(Edit5.Text) >= 8 then
+    begin
+      if Edit5.Text = Edit6.Text then
       begin
-         if Edit5.Text = Edit6.Text then
+        if ValidarEMail(Edit3.Text) = true then
+        begin
+          if RadioGroup1.ItemIndex = 0 then
           begin
-            if ValidarEMail(Edit3.Text) = true then
-              begin
-                if RadioButton1.Checked = false or
-                   RadioButton1.Checked = true then
-                  begin
-                    usuario := Tusuario.new
-                      .nome(Edit1.Text)
-                      .sobrenome(Edit2.Text)
-                      .usuario(Edit3.Text)
-                      .telefone(MaskEdit1.Text)
-                      .email(Edit4.Text)
-                      .senha(Edit5.Text)
-                      .confirmacao(Edit6.Text)
-                      .funcao(RadioButton1.Checked);
-                    ShowMessage('Seu cadastro foi realizado com sucesso.');
+            usuario := Tusuario.new
+              .nome(Edit1.Text)
+              .sobrenome(Edit2.Text)
+              .usuario(Edit4.Text)
+              .telefone(MaskEdit1.Text)
+              .email(Edit3.Text)
+              .senha(Edit5.Text)
+              .confirmacao(Edit6.Text)
+              .funcao(false.ToInteger);
+            ShowMessage('Seu cadastro como operador foi realizado com sucesso.');
 
+            if usuario.cadastro then
+            form1.Close;
 
-                    Edit1.Clear;
-                    Edit2.Clear;
-                    Edit3.Clear;
-                    MaskEdit1.Clear;
-                    Edit4.Clear;
-                    Edit5.Clear;
-                    Edit6.Clear;
-                    RadioButton1.Checked := false;
-
-                    if usuario.cadastro then
-
-                    form1.Close;
-                  end
-                else
-                  
-              end
-            else
-              begin
-                ShowMessage('Seu email não é válido, tente reescrevelo.')
-              end;
           end
-         else
+          else
           begin
-            ShowMessage('As senhas devem ser iguais.')
+            ShowMessage('algo deu errado no seu cadastro, tente novamente.');
+            exit
           end;
+        end
+        else
+        begin
+          ShowMessage('Seu email não é válido, tente reescrevelo.')
+        end;
+      end
+      else
+      begin
+        ShowMessage('As senhas devem ser iguais.')
+      end;
       end
     else
-      begin
-        ShowMessage('A sua senha deve ter no minimo 8 caracteres.')
-      end;
+    begin
+      ShowMessage('A sua senha deve ter no minimo 8 caracteres.')
+    end;
   end
-else
+  else
   begin
     ShowMessage('Todos os campos devem ser preenchidos.')
   end;
 end;
 
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  if Edit5.PasswordChar = '*' then
   begin
-    form6.Visible := true;
-
+    Edit5.PasswordChar := #0;
+  end
+  else
+  begin
+    Edit5.PasswordChar := '*';
   end;
+
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  if Edit6.PasswordChar = '*' then
+  begin
+    Edit6.PasswordChar := #0;
+  end
+  else
+  begin
+    Edit6.PasswordChar := '*';
+  end;
+
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  form6.Visible := true;
+
+end;
 
 function TForm1.ValidarEMail(aStr: string): Boolean;
 begin

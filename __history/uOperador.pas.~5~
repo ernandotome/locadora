@@ -1,0 +1,37 @@
+unit uOperador;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls,
+  System.Actions, Vcl.ActnList, Vcl.CategoryButtons, Vcl.CheckLst,
+  System.Win.TaskbarCore, Vcl.Taskbar, Vcl.Menus;
+
+type
+  TForm3 = class(TForm)
+    Label1: TLabel;
+    MainMenu1: TMainMenu;
+    Adicionar1: TMenuItem;
+    Adicionar2: TMenuItem;
+    Atualizar1: TMenuItem;
+    Deletar1: TMenuItem;
+    PopupMenu1: TPopupMenu;
+    Adicionar3: TMenuItem;
+    Pesquisar1: TMenuItem;
+    Pesquisar2: TMenuItem;
+    Deletar2: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+end.
