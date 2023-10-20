@@ -47,34 +47,34 @@ var
 
       qr.SQL.Text :=
         'SELECT * FROM usuario As u WHERE u.Usuario = "' + Edit1.Text +
-        '" AND u.Senha = "' + Edit2.Text + '"AND u.Funcao = 0';
+        '" AND u.Senha = "' + Edit2.Text + '"';
 
       qr.Active:= true;
 
-      if qr.SQL.Text = 'SELECT * FROM usuario As u WHERE u.Usuario = "' + Edit1.Text +
-        '" AND u.Senha = "' + Edit2.Text + '"AND u.Funcao = 0'
-        then
+      var
+        funcao := qr.FieldByName('funcao').AsString;
+
         begin
           if qr.RecordCount <= 0 then
            begin
              ShowMessage('Credenciais não conferem');
              Edit1.SetFocus;
-           end
-          else
+           end;
+          if funcao = '0' then
+           begin
             Form6.Visible := false;
             Form3.ShowModal;
             Form6.Close;
-        end
-      else
-        if qr.RecordCount <= 0 then
-          begin
-            ShowMessage('Credenciais não conferem');
-            Edit1.SetFocus;
-          end
-        else
-            Form6.Visible := false;
-            Form2.ShowModal;
-            Form6.Close;
+           end
+          else
+            begin
+              Form6.Visible := false;
+              Form2.ShowModal;
+              Form6.Close;
+
+            end;
+
+        end;
 
     finally
       FreeAndNil(qr);
