@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, uNovoCadastro, iNovoUsuario, uDataModule1, FireDAC.Comp.Client,
-  Vcl.ExtCtrls, uOperador, uAtendente;
+  Vcl.ExtCtrls, uOperador, uAtendente, uCadastro;
 
 type
   TForm6 = class(TForm)
@@ -28,9 +28,6 @@ var
   Form6: TForm6;
 
 implementation
-
-uses
-  uCadastro;
 
 {$R *.dfm}
 
@@ -57,7 +54,7 @@ var
         begin
           if qr.RecordCount <= 0 then
            begin
-             ShowMessage('Credenciais não conferem');
+             ShowMessage('Usuario ou senha não exitem.');
              Edit1.SetFocus;
            end;
           if funcao = '0' then
@@ -66,12 +63,11 @@ var
             Form3.ShowModal;
             Form6.Close;
            end
-          else
+          else if funcao = '1' then
             begin
               Form6.Visible := false;
               Form2.ShowModal;
               Form6.Close;
-
             end;
 
         end;
