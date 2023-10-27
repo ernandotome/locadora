@@ -1,4 +1,4 @@
-object Form4: TForm4
+object frmCadastroAtendente: TfrmCadastroAtendente
   Left = 633
   Top = 332
   Caption = 'Novo Atendente'
@@ -115,9 +115,12 @@ object Form4: TForm4
     Top = 297
     Width = 121
     Height = 23
+    Hint = 'Senha de 8 caracteres.'
     ImeName = 'Edit6'
     MaxLength = 8
+    ParentShowHint = False
     PasswordChar = '*'
+    ShowHint = True
     TabOrder = 6
   end
   object Edit6: TEdit
@@ -126,7 +129,9 @@ object Form4: TForm4
     Width = 121
     Height = 23
     MaxLength = 8
+    ParentShowHint = False
     PasswordChar = '*'
+    ShowHint = True
     TabOrder = 7
   end
   object Button2: TButton
@@ -153,6 +158,7 @@ object Form4: TForm4
     Width = 123
     Height = 68
     Caption = 'Fun'#231#227'o'
+    ItemIndex = 0
     Items.Strings = (
       'Atendente')
     TabOrder = 10

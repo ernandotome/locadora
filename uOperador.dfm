@@ -1,8 +1,9 @@
-object Form3: TForm3
-  Left = 0
-  Top = 0
+object frmPrincipal: TfrmPrincipal
+  Left = 572
+  Top = 291
+  BorderStyle = bsSizeToolWin
   Caption = 'Operador'
-  ClientHeight = 445
+  ClientHeight = 455
   ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -13,6 +14,8 @@ object Form3: TForm3
   Menu = MainMenu1
   PopupMenu = PopupMenu1
   Position = poDesktopCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
   TextHeight = 15
   object Label1: TLabel
     Left = 248
@@ -23,8 +26,8 @@ object Form3: TForm3
     Caption = 'Bem-Vindo, Operador'
   end
   object Button1: TButton
-    Left = 80
-    Top = 176
+    Left = 248
+    Top = 104
     Width = 105
     Height = 57
     Caption = 'Cadastrar M'#237'dia'
@@ -33,52 +36,79 @@ object Form3: TForm3
   end
   object Button2: TButton
     Left = 248
-    Top = 176
+    Top = 184
     Width = 105
     Height = 57
-    Caption = 'Atualizar'
+    Caption = 'Atualizar M'#237'dia'
     TabOrder = 1
+    OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 408
-    Top = 176
+    Left = 248
+    Top = 264
     Width = 105
     Height = 57
-    Caption = 'Deletar'
+    Caption = 'Deletar M'#237'dia'
     TabOrder = 2
   end
   object MainMenu1: TMainMenu
-    Left = 24
+    Left = 248
     Top = 392
     object Adicionar1: TMenuItem
-      Caption = 'Atendente'
+      Caption = 'Adicionar'
+      object Operador1: TMenuItem
+        Caption = 'Operador'
+        OnClick = Operador1Click
+      end
       object CD1: TMenuItem
-        Caption = 'Adicionar'
+        Caption = 'Atendente'
         OnClick = CD1Click
       end
-      object Pesquisar1: TMenuItem
-        Caption = 'Pesquisar'
-      end
-      object Pesquisar2: TMenuItem
-        Caption = 'Editar'
-      end
-      object Excluir1: TMenuItem
-        Caption = 'Excluir'
+      object Mdia1: TMenuItem
+        Caption = 'M'#237'dia'
+        OnClick = Mdia1Click
       end
     end
-    object Adicionar2: TMenuItem
-      Caption = 'Alugueis'
+    object Pesquisar1: TMenuItem
+      Caption = 'Pesquisar'
+      object Operador2: TMenuItem
+        Caption = 'Operador'
+      end
+      object Operador3: TMenuItem
+        Caption = 'Atendente'
+      end
+      object Mdia2: TMenuItem
+        Caption = 'M'#237'dia'
+      end
     end
     object Atualizar1: TMenuItem
       Caption = 'Atualizar'
+      object Operador4: TMenuItem
+        Caption = 'Operador'
+      end
+      object Operador5: TMenuItem
+        Caption = 'Atendente'
+      end
+      object Mdia3: TMenuItem
+        Caption = 'M'#237'dia'
+      end
     end
     object Deletar1: TMenuItem
       Caption = 'Deletar'
+      object Operador6: TMenuItem
+        Caption = 'Operador'
+      end
+      object Operador7: TMenuItem
+        Caption = 'Atendente'
+      end
+      object Mdia4: TMenuItem
+        Caption = 'M'#237'dia'
+      end
     end
   end
   object PopupMenu1: TPopupMenu
     TrackButton = tbLeftButton
-    Left = 568
+    Left = 336
     Top = 392
     object MenuItem1: TMenuItem
       Caption = 'Adicionar'

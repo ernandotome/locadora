@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus;
 
 type
-  TForm2 = class(TForm)
+  TfrmAtendente = class(TForm)
     Label1: TLabel;
     PopupMenu1: TPopupMenu;
     Adicionar1: TMenuItem;
@@ -21,7 +21,7 @@ type
   end;
 
 var
-  Form2: TForm2;
+  frmAtendente: TfrmAtendente;
 
 implementation
 

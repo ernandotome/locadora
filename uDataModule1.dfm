@@ -21,4 +21,14 @@ object DataModule1: TDataModule1
     Left = 440
     Top = 112
   end
+  object FDConnection2: TFDConnection
+    Params.Strings = (
+      'Database=locadora'
+      'User_Name=root'
+      'Password=qwe123'
+      'Server=127.0.0.1'
+      'DriverID=MySQL')
+    Left = 336
+    Top = 272
+  end
 end

@@ -15,6 +15,7 @@ type
     FDConnection1: TFDConnection;
     FDQuery1: TFDQuery;
     FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink;
+    FDConnection2: TFDConnection;
   private
     { Private declarations }
   public

@@ -8,7 +8,7 @@ uses
   Vcl.ExtCtrls, Vcl.Mask, uNovoCadastro;
 
 type
-  TForm4 = class(TForm)
+  TfrmCadastroAtendente = class(TForm)
     Button1: TButton;
     Label1: TLabel;
     Label2: TLabel;
@@ -38,13 +38,13 @@ type
   end;
 
 var
-  Form4: TForm4;
+  frmCadastroAtendente: TfrmCadastroAtendente;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm4.Button1Click(Sender: TObject);
+procedure TfrmCadastroAtendente.Button1Click(Sender: TObject);
 begin
   var
   usuario : iUsuario;
@@ -77,10 +77,10 @@ begin
               .senha(Edit5.Text)
               .confirmacao(Edit6.Text)
               .funcao(true.ToInteger);
-            ShowMessage('Seu cadastro como operador foi realizado com sucesso.');
+            ShowMessage('Seu cadastro como Atendente foi realizado com sucesso.');
 
             if usuario.cadastro then
-            form4.Close;
+            frmCadastroAtendente.Close;
 
           end
           else
@@ -112,7 +112,7 @@ end;
 
 end;
 
-procedure TForm4.Button2Click(Sender: TObject);
+procedure TfrmCadastroAtendente.Button2Click(Sender: TObject);
 begin
     if Edit5.PasswordChar = '*' then
   begin
@@ -124,7 +124,7 @@ begin
   end;
 end;
 
-procedure TForm4.Button3Click(Sender: TObject);
+procedure TfrmCadastroAtendente.Button3Click(Sender: TObject);
 begin
     if Edit6.PasswordChar = '*' then
   begin
@@ -136,7 +136,7 @@ begin
   end;
 end;
 
-function TForm4.ValidarEMail(aStr: string): Boolean;
+function TfrmCadastroAtendente.ValidarEMail(aStr: string): Boolean;
 begin
       aStr := Trim(UpperCase(aStr));
    if Pos('@', aStr) > 1 then

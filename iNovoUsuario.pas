@@ -13,7 +13,6 @@ type
     function confirmacao(avalue : string) : iUsuario; overload;
     function funcao(avalue : integer) : iUsuario; overload;
 
-
     function nome : string; overload;
     function sobrenome : string; overload;
     function usuario : string; overload;
